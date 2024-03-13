@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OhMyFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header>
+        <div id="logo">
+            <img src="./assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+        </div>
+        <div class="localisation"><i class="fa-solid fa-location-dot"></i><span>Paris, Belleville</span></div>
+    </header>
+    <section id="reservation">
+        <h1>Réservez le menu qui vous convient</h1>
+        <h2>Découvrez des restaurants d’exception, sélectionnés par nos soins.</h2>
+        <button>Explorer nos restaurants</button>
+    </section>
     
+<main class="main-container">
+    <section id="fonctionnement">
+        <h2>Fonctionnement</h2>
+        <div id="detail">
+            <div>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+            </div>
+            
+            <article><i class="fa-solid fa-mobile-screen-button"></i><p>Choisissez un restaurant</p></article>
+            <article><i class="fa-solid fa-list-ul"></i><p>Composez votre menu</p></article>
+            <article><i class="fa-solid fa-store"></i><p>Dégustez au restaurant</p></article>
+        </div>
+    </section>
+
+    <section id="cards">
+        <h2>Restaurant</h2> 
+        <article class="card">
+            <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût restaurant">
+            <div class="card-content">
+                <h3 class="card-title">La palette du goût</h3>
+                <p class="card-subtitle">Ménilmontant</p>
+            </div>
+        </article>
+       
+        <article class="card">  
+            <img src="" alt="La note enchantée, restaurant">
+            <div class="card-content">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+            </div>
+        </article>
+        <article class="card">
+            <img src="" alt="À la française, restaurant">
+            <div class="card-content">
+            <h3>À la française</h3>
+                <p>Cité Rouge</p>
+            </div>
+        </article>
+        <article class="card">
+            <img src="" alt="Le délice des sens, restaurant">
+            <div class="card-content">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+            </div>
+        </article>  
+    </section>
+    
+</main>
+<footer>
+    <ul>
+        <li><a href="#">Proposer un restaurant</a></li>
+        <li><a href="#">Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo footer">
+</footer>
+
 </body>
 </html>
