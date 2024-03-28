@@ -1,2 +1,11 @@
-@import "_style.scss";
+@import "utils/_variables";
+
+@import "base/_global";
+
+@import "layout/footer";
+
+@import "components/cards";
+
+@import "pages/_style";
+//@import "pages/_restau";
 //@import "_style.scss";
