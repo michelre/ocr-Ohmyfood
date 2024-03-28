@@ -17,3 +17,7 @@ npm run dev
 ```
 npm run build
 ```
+
+## Documentations
+
+* Méthode 7-1: https://gist.github.com/rveitch/84cea9650092119527bc
