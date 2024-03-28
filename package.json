@@ -1,0 +1,25 @@
+{
+  "name": "ocr-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass sass/index.scss css/style.css --watch",
+    "build": "sass sass/index.scss css/style.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michelre/ocr-Ohmyfood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michelre/ocr-Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/michelre/ocr-Ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
+}
