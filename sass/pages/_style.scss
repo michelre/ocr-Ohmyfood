@@ -93,27 +93,28 @@ header {
             padding: 25px 0px 0px 20px;
         }
         #detail {
-            display:flex;
+            display: flex;
             flex-direction: column;
-            width: 100%;
-            margin-bottom: 40px;
-        
+            align-items: stretch;
+            padding-bottom: 50px;
+            
             article{
                 display: flex;
                 align-items: center;
+                text-align: center;
                 padding: 20px;
                 width: 75%;
                 background: #F6F6F6;
                 border-radius: 20px;
                 box-shadow: 0px 4px 15px 0px $shadow;
-                margin-top: 40px;
-                margin-left: 30px;
+                margin: 40px 0px 0px 30px;
 
                     i{
                         margin: 0px 12px;
                     }
                     p {
                         margin-left: 15px;
+                        
                     }
                 
             }
@@ -128,97 +129,319 @@ header {
               }
             span {
                 position: absolute;
-                top: 50%;
+                top: 70%;
                 transform: translateY(-50%);
                 left: 25px;
-                width: 24px; 
-                height: 24px; 
-                border-radius: 50%; 
-                background-color:$purple-light;
-                color:$white;
-                text-align: center; 
-                line-height: 24px; 
-            }
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: #9356DC;
+                color: #FFFFFF;
+                text-align: center;
+                line-height: 24px;
+            } 
+            
           }
 }
 
 
 /* *** section restaurant *** */
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
+ #cards {
     
-     h2 {
+ h2 {
         padding: 30px 0px 0px 12px;
     }
 }
 
-
-footer{
-    background-color:$gray-dark;
-
-        h3{
-            font-family: Shrikhand;
-            color: $white;
-            font-size: 18px;
-            font-style: italic;
-            font-weight:bold;
-            text-align: left;
-            padding: 10px 20px;
-            }
-        ul {
-            list-style-type: none;
-            padding: 15px;
-                
-                li {
-                    color:$white;
-                    margin-top:5px ;
-                        a {
-                            text-decoration: none; 
-                            color:$white; 
-                        }
-                        i{
-                            margin-right:12px;
-                        }
-                }
-            }
-            
-}
-
-
-
-
 @media screen and (min-width: 768px) {
-   .main-container {
+
+/* *** section fonctionnement *** */
+    .main-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-            #detail {
-                display:flex;
-                flex-direction: row;
-                width: 100%;
-                margin-bottom: 40px;
 
-                article{
-                    width: 100%;
-  
+            #fonctionnement{
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+                margin: 20px 0px;
+               
+
+                h2{
+                    padding: 25px 0px 10px 8%;
                 }
+                    #detail {
+                        display: flex;
+                        flex-direction: row;
+                        width: 88%;
+                        padding-left: 8%;
+                        margin-bottom: 40px;
+        
+                        div{
+                         width: 33%;
+                            padding-right: 20px;
+                        }
+                    
+                        article{
+                            
+                            padding: 18px;
+                            margin: 10px 0px 0px 0px;
+        
+                            p{
+                                font-family: Roboto;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 18.75px;
+                                text-align: left;
+        
+                            }
+        
+                        }
+                        span {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0px;
+                            width: 24px; 
+                            height: 24px; 
+                            border-radius: 50%; 
+                            background-color:$purple-light;
+                            color:$white;
+                            text-align: center; 
+                            line-height: 24px; 
+                        }
+                    }
+            }
+        
+            
+    }
+
+    #cards{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        h2 {
+            padding: 30px 0px 0px 17px;
+        }
+
+       #card-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        
+       }
+        .card {
+            width: calc(50% - 40px);
+        }
+    }
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 140px;
+        h3{
+            // padding:70px 15px;
+            margin: 90px 0px 0px 0px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding:15px;
+            margin: 80px 0px 0px 0px;
+           li{
+            margin-right: 10px;
+           }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+
+    #reservation {
+        h1{
+            font-family: Roboto;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 46.88px;
+            text-align: center;
+
+        }
+        h2{
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 21.09px;
+            text-align: center;
             }
     }
-      .card {
-        width: calc(50% - 40px);
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+            #fonctionnement{
+                width: 100%;
+                padding: 0px;
+                margin: 20px 0px;
+                h2{
+                    padding: 25px 0px 10px 7%;
+        }
+                #detail {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 88%;
+                    padding-left: 7%;
+                    margin-bottom: 40px;
+    
+                    div{
+                        width: 33%;
+                    }
+                  
+                    article{
+                        width: auto;
+                        padding: 18px;
+                        margin: 40px 0px 0px 20px;
+    
+                        p{
+                            font-family: Roboto;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 18.75px;
+                            text-align: left;
+    
+                        }
+      
+                    }
+                    span {
+                        position: absolute;
+                        top: 70%;
+                        transform: translateY(-50%);
+                        left: 10px;
+                        width: 24px; 
+                        height: 24px; 
+                        border-radius: 50%; 
+                        background-color:$purple-light;
+                        color:$white;
+                        text-align: center; 
+                        line-height: 24px; 
+                    }
+                }
+            }     
     }
+
+    #cards{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+            h2 {
+            padding: 30px 0px 0px 17px;
+            }
+
+       #card-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+      
+       }
+        .card {
+            width: calc(48% - 40px);
+        }
+    }
+
+
+    @media screen and (min-width: 1280px) {
+       
+        .main-container { 
+             #fonctionnement{
+            width: 100%;
+            padding: 0px;
+            margin: 20px 0px;
+            h2{
+                padding: 25px 0px 10px 11%;
+            }
+        
+            #detail{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 78%;
+                padding-left: 10%;
+                margin-bottom: 40px;
+
+                div{
+                    width: 33%;
+                }
+
+                article{
+                    width: auto;
+                    padding: 20px;
+                        span{
+                            position: absolute;
+                            top: 70%;
+                            transform: translateY(-50%);
+                            left: 10px;
+                        }
+                }
+            }
+        }
+
+        }
+        #cards{
+            width: 80%;
+            padding: 0px 0%;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // .main-container { 
+
+    //     #fonctionnement{
+    //     width: 80%;
+    //     padding: 0px 10%;
+    //     margin: 20px 0px;
+    // }
+    // #detail {
+    //     display:flex;
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    //     width: 100%;
+    //     margin-bottom: 40px;
+      
+    //     article{
+    //         width: auto;
+    //         // margin: 40px 0px 0px 0px;
+    //         padding: 20px;
+    //     }
+    // }
+// }
 }
 
-@media screen and (min-width: 1024px) {
-    
-}
 
-@media screen and (min-width: 1280px) {
-    
-}
 
 
 

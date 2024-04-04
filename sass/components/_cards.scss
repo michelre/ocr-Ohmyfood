@@ -1,6 +1,6 @@
 .card{
     background-color:$white;
-    width: 100%;
+    width: calc(100% - 40px);
     height: 251px;
     border-radius: 15px;
     margin: 10px 20px 30px 20px;

@@ -1,0 +1,30 @@
+footer{
+    background-color:$gray-dark;
+
+        h3{
+            font-family: Shrikhand;
+            color: $white;
+            font-size: 18px;
+            font-style: italic;
+            font-weight:bold;
+            text-align: left;
+            padding: 10px 20px;
+            }
+        ul {
+            list-style-type: none;
+            padding: 15px;
+                
+                li {
+                    color:$white;
+                    margin-top:5px ;
+                        a {
+                            text-decoration: none; 
+                            color:$white; 
+                        }
+                        i{
+                            margin-right:12px;
+                        }
+                }
+            }
+            
+}
