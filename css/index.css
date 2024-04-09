@@ -9,6 +9,11 @@ body {
   background-color: #F5F5F5;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
@@ -63,7 +68,7 @@ footer ul li i {
   background-color: #FFFFFF;
   height: 251px;
   border-radius: 15px;
-  box-shadow: 0px 4px 15px 0px #0000001A;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   position: relative;
   margin-bottom: 18px;
 }
@@ -86,7 +91,7 @@ footer ul li i {
   line-height: 16px;
   text-align: center;
   border: none;
-  box-shadow: 0px 2px 4px 0px #00000026;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   /* position du boutton */
   position: absolute;
   top: 25px;
@@ -128,7 +133,7 @@ header #logo {
   align-items: center;
   background-color: #FFFFFF;
   width: 100%;
-  box-shadow: 0px 2px 4px 0px #00000026;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 header #logo img {
   width: 200px;
@@ -138,7 +143,7 @@ header .location {
   text-align: center;
   background-color: #EAEAEA;
   padding: 16px 0px 15px 55px;
-  box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 header .location i {
   margin: 0px 10px 0px 6px;
@@ -176,7 +181,7 @@ header .location input {
 #reservation button {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: #FFFFFF;
-  box-shadow: 0px 4px 10px 0px #00000040;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -219,7 +224,7 @@ header .location input {
   box-sizing: border-box;
   background: #F6F6F6;
   border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px #00000026;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .main-container #detail article i {
   margin: 0px 12px;
@@ -275,7 +280,6 @@ header .location input {
     line-height: 18.75px;
     text-align: left;
   }
-
   #cards #card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -300,7 +304,6 @@ header .location input {
     line-height: 21.09px;
     text-align: center;
   }
-
   .main-container #fonctionnement {
     width: 100%;
     padding: 0px;
@@ -351,19 +354,5 @@ header .location input {
     left: 10px;
   }
 }
-/* .cards {
-    max-width: 756px;
-}
 
-.card article {
-    width: 95%; 
-    max-width: 100%; 
-    margin: 5px; 
-}
-.card article img {
-    max-width: 100%; 
-    max-height: 100%; 
-    object-fit: cover; 
-} */
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
