@@ -153,7 +153,7 @@ main #background {
   background-color: #F6F6F6;
   width: 100%;
   height: auto;
-  top: 275px;
+  top: 265px;
   border-radius: 40px 40px 0px 0px;
 }
 main #background #title {
@@ -167,6 +167,59 @@ main #background #title {
 main #background #title h1 {
   font-size: 28px;
   font-style: italic;
+}
+main #background .fa-heart::before {
+  width: 22px;
+  height: 21px;
+  display: block;
+  font-size: 28px;
+}
+main #background button {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  margin: 40px 100px;
+}
+main .cards-restau {
+  margin: 12px;
+}
+main .cards-restau h2 {
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 300;
+  text-align: left;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+}
+main .cards-restau .card-restau {
+  background-color: #FFFFFF;
+  padding: 18px 13px 18px 18px;
+  margin: 15px 0px;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15px;
+}
+main .cards-restau .card-restau .card-title h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+main .cards-restau .card-restau .card-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+main .cards-restau .card-restau .card-content h4 {
+  font-size: 15.04px;
+  font-weight: 300;
+}
+main .cards-restau .card-restau .card-content p {
+  font-size: 15.04px;
 }
 
 /*# sourceMappingURL=restau.css.map */
