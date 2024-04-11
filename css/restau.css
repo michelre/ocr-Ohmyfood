@@ -121,105 +121,160 @@ footer ul li i {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
-header {
-  box-sizing: border-box;
-}
-header #logo {
-  display: flex;
-  background-color: white;
-  padding: 18px 0px 9px 0px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
-  align-items: center;
-}
-header #logo #return {
-  width: 20%;
-  padding: 0px 23px;
-}
-header #logo #logo-img {
-  width: 50%;
-}
-header #logo #logo-img img {
-  width: 162px;
+body {
+  background-color: #FFFFFF;
 }
 
-main img {
+header {
+  height: 63px;
   width: 100%;
-  height: auto;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #logo {
+  font-family: shrikhand, cursive;
+  font-size: 30px;
+  text-decoration: none;
+}
+header #return {
+  position: absolute;
+  color: #353535;
+  font-size: 18px;
+  left: 25px;
+}
+
+main .banner img {
+  width: 100%;
   object-fit: cover;
-  display: block;
+  height: 260px;
 }
 main #background {
-  position: absolute;
-  background-color: #F6F6F6;
-  width: 100%;
-  height: auto;
-  top: 265px;
-  border-radius: 40px 40px 0px 0px;
+  border-radius: 40px 40px 0 0;
+  background-color: #f6f6f6;
+  position: relative;
+  margin-top: -50px;
+  padding: 50px 20px;
 }
-main #background #title {
+main #background .main-container {
+  margin: auto;
+  max-width: 1440px;
+}
+main #background .main-container .title-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 341px;
-  height: 27px;
-  padding: 30px 10px;
+  font-size: 18px;
 }
-main #background #title h1 {
-  font-size: 28px;
-  font-style: italic;
-}
-main #background .fa-heart::before {
-  width: 22px;
-  height: 21px;
+main #background .main-container .title-container h1 {
+  font-family: shrikhand, cursive;
   display: block;
-  font-size: 28px;
+  font-size: 1.5em;
+  font-weight: bold;
+  unicode-bidi: isolate;
 }
-main #background button {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+main #background .main-container .title-container .heart {
+  position: relative;
+}
+main #background .main-container .title-container .heart .fa-solid {
+  display: none;
+}
+main #background .main-container .title-container .heart .fa-regular {
+  display: block;
+  font-weight: 100;
+}
+main #background .main-container .title-container .heart:active .fa-regular {
+  display: none;
+}
+main #background .main-container .title-container .heart:active .fa-solid {
+  display: inline-block;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+}
+main #background .main-container #btn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 40px;
+}
+main #background .main-container #btn button {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  width: 218px;
+  width: 186px;
   height: 50px;
   border-radius: 25px;
   font-size: 16px;
   font-weight: 500;
-  text-align: center;
   border: none;
-  margin: 40px 100px;
 }
-main .cards-restau {
-  margin: 12px;
+main #background .cards-restau {
+  margin-top: 20px;
 }
-main .cards-restau h2 {
+main #background .cards-restau h2 {
   font-family: Roboto;
   font-size: 19px;
   font-weight: 300;
   text-align: left;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   width: 40px;
 }
-main .cards-restau .card-restau {
-  background-color: #FFFFFF;
-  padding: 18px 13px 18px 18px;
+main #background .cards-restau .card-restau {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
   margin: 15px 0px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 15px;
 }
-main .cards-restau .card-restau .card-title h3 {
+main #background .cards-restau .card-restau h3 {
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 5px;
 }
-main .cards-restau .card-restau .card-content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
+main #background .cards-restau .card-restau .card-content {
+  margin: 13.5px 15px;
 }
-main .cards-restau .card-restau .card-content h4 {
+main #background .cards-restau .card-restau .card-content h4 {
   font-size: 15.04px;
   font-weight: 300;
 }
-main .cards-restau .card-restau .card-content p {
+main #background .cards-restau .card-restau .card-price {
+  display: flex;
+  align-items: end;
+}
+main #background .cards-restau .card-restau .card-price span {
   font-size: 15.04px;
+  padding: 0px 10px;
+}
+main #background .cards-restau .card-restau .card-anim {
+  background-color: #99e2d0;
+  color: #fff;
+  font-size: 20px;
+  padding: 23.5px 20px;
+  border-radius: 0 15px 15px 0;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main .banner img {
+    height: 360px;
+  }
+  main #background {
+    width: 90%;
+    margin-left: 3%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .banner img {
+    height: 360px;
+  }
+  main #background {
+    width: 80%;
+    margin-left: 9%;
+  }
 }
 
 /*# sourceMappingURL=restau.css.map */
