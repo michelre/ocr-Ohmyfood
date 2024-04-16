@@ -7,6 +7,50 @@
 body {
   background-color: #F5F5F5;
 }
+body .loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 3s forwards;
+}
+body .dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #9356DC;
+  margin: 0 15px;
+  animation: loader infinite 0.3s alternate;
+}
+body .d2 {
+  animation-delay: 0.05s;
+}
+body .d3 {
+  animation-delay: 0.1s;
+}
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 
 a {
   text-decoration: none;
@@ -174,23 +218,6 @@ main #background .main-container .title-container h1 {
   font-weight: bold;
   unicode-bidi: isolate;
 }
-main #background .main-container .title-container .heart {
-  position: relative;
-}
-main #background .main-container .title-container .heart .fa-solid {
-  display: none;
-}
-main #background .main-container .title-container .heart .fa-regular {
-  display: block;
-  font-weight: 100;
-}
-main #background .main-container .title-container .heart:active .fa-regular {
-  display: none;
-}
-main #background .main-container .title-container .heart:active .fa-solid {
-  display: inline-block;
-  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
-}
 main #background .main-container #btn {
   display: flex;
   flex-direction: column;
@@ -226,8 +253,11 @@ main #background .cards-restau .card-restau {
   align-items: center;
   background-color: #ffffff;
   margin: 15px 0px;
-  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 15px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(20px);
 }
 main #background .cards-restau .card-restau h3 {
   font-size: 18px;
@@ -256,6 +286,25 @@ main #background .cards-restau .card-restau .card-anim {
   padding: 23.5px 20px;
   border-radius: 0 15px 15px 0;
   display: none;
+}
+main #background .cards-restau:nth-child(2) .card-restau {
+  animation: fadeIn 0.6s ease forwards 0.2s;
+}
+main #background .cards-restau:nth-child(3) .card-restau {
+  animation: fadeIn 0.6s ease forwards 0.4s;
+}
+main #background .cards-restau:nth-child(4) .card-restau {
+  animation: fadeIn 0.6s ease forwards 0.6s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 768px) {
