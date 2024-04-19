@@ -137,9 +137,8 @@ footer ul li i {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   /* position du boutton */
   position: absolute;
-  top: 25px;
-  left: 85%;
-  transform: translate(-50%, -50%);
+  top: 15px;
+  right: 15px;
   z-index: 1;
 }
 .card .card-content {
@@ -255,6 +254,7 @@ main #background .cards-restau .card-restau {
   margin: 15px 0px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 15px;
+  overflow: hidden;
   transition: opacity 0.5s ease, transform 0.5s ease;
   opacity: 0;
   transform: translateY(20px);
@@ -263,17 +263,36 @@ main #background .cards-restau .card-restau h3 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.5s linear;
 }
 main #background .cards-restau .card-restau .card-content {
-  margin: 13.5px 15px;
+  padding: 13.5px 15px;
+  box-sizing: border-box;
+  width: 80%;
+  flex-shrink: 0;
+  transition: all 0.5s linear;
 }
 main #background .cards-restau .card-restau .card-content h4 {
   font-size: 15.04px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.5s linear;
 }
 main #background .cards-restau .card-restau .card-price {
   display: flex;
   align-items: end;
+  width: 20%;
+  flex-shrink: 0;
+  padding: 13.5px 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: end;
+  transition: width 0.5s linear;
 }
 main #background .cards-restau .card-restau .card-price span {
   font-size: 15.04px;
@@ -285,7 +304,20 @@ main #background .cards-restau .card-restau .card-anim {
   font-size: 20px;
   padding: 23.5px 20px;
   border-radius: 0 15px 15px 0;
-  display: none;
+  transform: translateX(100%);
+  transition: transform 0.5s linear;
+  width: 60px;
+  flex-grow: 0;
+  box-sizing: border-box;
+}
+main #background .cards-restau .card-restau:hover .card-anim {
+  transform: translateX(0);
+}
+main #background .cards-restau .card-restau:hover .card-content {
+  width: calc(80% - 30px);
+}
+main #background .cards-restau .card-restau:hover .card-price {
+  width: calc(20% - 30px);
 }
 main #background .cards-restau:nth-child(2) .card-restau {
   animation: fadeIn 0.6s ease forwards 0.2s;
