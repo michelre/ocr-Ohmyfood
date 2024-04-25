@@ -10,15 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michelre/ocr-Ohmyfood.git"
+    "url": "git+https://github.com/ElodieAllegro/ocr-Ohmyfood.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/michelre/ocr-Ohmyfood/issues"
-  },
-  "homepage": "https://github.com/michelre/ocr-Ohmyfood#readme",
+  "homepage": "https://github.com/ElodieAllegro/ocr-Ohmyfood.git#readme",
   "devDependencies": {
     "sass": "^1.72.0"
   }
