@@ -35,6 +35,7 @@ main {
     position: relative;
     margin-top: -50px;
     padding: 50px 20px;
+
     .main-container {
       margin: auto;
       max-width: 1440px;
@@ -44,40 +45,45 @@ main {
         justify-content: space-between;
         align-items: center;
         font-size: 18px;
-        h1 {
+        h2 {
           font-family: shrikhand, cursive;
           display: block;
           font-size: 1.5em;
           font-weight: bold;
           unicode-bidi: isolate;
         }
+        .heart {
+          position: relative;
+          width: 18px;
+          height: 18px;
+          overflow: hidden;
+          margin-left: 24px;
 
-        // .heart {
-        //   position: relative;
-        
-        //   .fas{
-        //    display: none;
-           
-        //   }
-        //   .far {
-        //     display: block;
-        //     font-weight: 100;
-        //   }
-        
-        //   &:hover {
-        //     .far{
-        //       display: block;
-        //     }
-        //     .fas {
-        //     display: inline-block;
-        //     color:linear-gradient(
-        //     193.33deg,
-        //     #9356dc -11.44%,
-        //     #ff79da 123.93%
-        //   )
-        //     }
-        //   }
-        // }
+          .fa-heart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+          }  
+          .fa-solid.fa-heart::before {
+            background: transparent;
+            color: transparent;
+            opacity: 0;
+          }
+          
+          &:hover {
+            .fa-solid.fa-heart::before {
+              background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;   
+              opacity: 1;           
+              transition: all .5s linear;
+            }
+          }
+
+
+        }
       }
 
       #btn {
