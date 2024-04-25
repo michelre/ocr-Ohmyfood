@@ -141,7 +141,7 @@ main {
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          transition: all .5s linear;
+          // transition: all .5s linear;
         }
 
         .card-content {
@@ -241,6 +241,13 @@ main {
     #background {
       width: 90%;
       margin-left: 3%;
+      .main-container{
+      
+        .title-container{
+            display: flex;
+            justify-content: center; 
+        }
+      }
     }
   }
 }

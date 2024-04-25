@@ -306,7 +306,6 @@ main #background .cards-restau .card-restau h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: all 0.5s linear;
 }
 main #background .cards-restau .card-restau .card-content {
   padding: 13.5px 15px;
@@ -386,6 +385,10 @@ main #background .cards-restau:nth-child(4) .card-restau {
   main #background {
     width: 90%;
     margin-left: 3%;
+  }
+  main #background .main-container .title-container {
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1024px) {
