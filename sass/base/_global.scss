@@ -30,9 +30,11 @@ body {
         
     }
     .d2{
+        background: $pink;
         animation-delay: 0.05s;
     }
     .d3{
+        background: $green-light;
         animation-delay: 0.1s; 
     }
    @keyframes loader {

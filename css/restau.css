@@ -29,9 +29,11 @@ body .dot {
   animation: loader infinite 0.3s alternate;
 }
 body .d2 {
+  background: #FF79DA;
   animation-delay: 0.05s;
 }
 body .d3 {
+  background: #99E2D0;
   animation-delay: 0.1s;
 }
 @keyframes loader {
