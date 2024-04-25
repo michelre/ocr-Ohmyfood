@@ -19,36 +19,25 @@ body .loader-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* animation-name: fadeOut;
-  animation-duration: 3s;
-  animation-fill-mode: forwards; */
   animation: fadeOut 3s forwards;
 }
-
-  body .dot {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #9356DC;
-    margin: 0 15px;
-    /* animation-name: loader;
-    animation-duration: 0.3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;   */
-    animation: loader infinite 0.3s alternate;
+body .dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #9356DC;
+  margin: 0 15px;
+  animation: loader infinite 0.3s alternate;
 }
-
 body .d2 {
-  background:#99E2D0;
   animation-delay: 0.05s;
 }
 body .d3 {
-  background: #FF79DA;
   animation-delay: 0.1s;
 }
 @keyframes loader {
   100% {
-    transform: translateY(-40px);
+    transform: translateY(-30px);
   }
 }
 @keyframes fadeOut {
@@ -56,7 +45,7 @@ body .d3 {
     opacity: 1;
   }
   70% {
-    opacity: 0.5;
+    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -165,17 +154,28 @@ footer ul li i {
 }
 .card .card-content .heart {
   position: relative;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  margin-left: 24px;
 }
-.card .card-content .heart .fa-solid {
-  display: none;
+.card .card-content .heart .fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.card .card-content .heart:active .fa-regular {
-  display: none;
+.card .card-content .heart .fa-solid.fa-heart::before {
+  background: transparent;
+  color: transparent;
+  opacity: 0;
+}
+.card .card-content .heart:hover .fa-solid.fa-heart::before {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-}
-.card .card-content .heart:active .fa-solid {
-  display: inline-block;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 1;
+  transition: all 0.5s linear;
 }
 
 header {

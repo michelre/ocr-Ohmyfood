@@ -41,24 +41,33 @@
         }
         .heart {
             position: relative;
-
-                .fa-solid {
-                    display: none;
-                }
-             }
-        .heart:active {
-            .fa-regular {
-                display: none;
-                background: linear-gradient(193.33deg,$purple-light -11.44%, $pink 123.93%);
-            
+            width: 18px;
+            height: 18px;
+            overflow: hidden;
+            margin-left: 24px;
+  
+            .fa-heart {
+              position: absolute;
+              top: 0;
+              left: 0;
+              
+            }  
+            .fa-solid.fa-heart::before {
+              background: transparent;
+              color: transparent;
+              opacity: 0;
             }
-            .fa-solid {
-                display: inline-block;
-                background: linear-gradient(193.33deg, $purple-light -11.44%, $pink 123.93%);
             
+            &:hover {
+              .fa-solid.fa-heart::before {
+                background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;   
+                opacity: 1;           
+                transition: all .5s linear;
+              }
             }
-
         }
-        
     }
 }
